@@ -49,14 +49,8 @@ def propigate(numbers, aval):
             else:
                 return aval
 
-def _cellchecker(x, y):
-    pass
-
-def cellCheck(numbers, aval):
-    for x in range(0,3):
-        availibilty = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        #for y in range:
-    pass
+def _rowcheck(row, colum, numbers, aval):
+       
 
 def choose(numbers, aval):
     least_constraind=[]
@@ -71,6 +65,10 @@ def choose(numbers, aval):
         for spots in least_constrained:
            for x,y in spots:
                numbers[x][y] = aval[spots][0]
+    most_constraining=[]
+    contrained=0
+    for spots in least_constraind:
+        
     return numbers
 
 print('enter file name')
